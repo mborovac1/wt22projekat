@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="bs">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- <link rel="stylesheet" href="z2.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+    <title>Spirala 3, Zadatak 3</title>
+  </head>
+  <body>
+    <!-- <div id="ispis"></div> -->
+    <div id="mocha"></div>
+    <!-- <script src="https://www.unpkg.com/xmlhttprequest@1.8.0/lib/XMLHttpRequest.js"></script> -->
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+    <script src="https://unpkg.com/sinon@6.1.4/pkg/sinon.js"></script>
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script class="mocha-init">
+      mocha.setup("bdd");
+    </script>
+    <script src="VjezbeAjax.js"></script>
+    <script src="test.js"></script>
+    <script class="mocha-exec">
+      mocha.run();
+    </script>
+  </body>
+</html>

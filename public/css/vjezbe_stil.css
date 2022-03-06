@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+body {
+  background: #789ccc;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 2fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "meni"
+    "odabirVjezbe"
+    "graf"
+    "graf"
+    "graf"
+    "graf";
+  font-size: 20px;
+  text-align: center;
+}
+
+#meni {
+  grid-area: meni;
+  border-bottom-width: 2px;
+  border-bottom-style: ridge;
+}
+
+#meni ul {
+  list-style-type: none;
+}
+
+#meni li,
+a {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+#odabirVjezbe {
+  cursor: pointer;
+  grid-area: odabirVjezbe;
+  background: #96bad5;
+  border: 1px solid #8fb0cc;
+  height: 100%;
+}
+
+.vjezba {
+  background: #e1e2ec;
+  width: 100%-10px;
+  border: 1px solid black;
+  margin: 5px;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#zadaci {
+  background: #4377a3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%-10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #8fb0cc;
+  border-top: 0;
+}
+
+.zadatak {
+  background: #96bad5;
+  width: auto;
+  margin: 3px;
+  border: 1px solid #8fb0cc;
+  padding: 5px;
+  font-size: 12px;
+}
+
+#graf {
+  grid-area: graf;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 45% 45%;
+    grid-template-areas:
+      "meni meni meni"
+      "odabirVjezbe graf graf"
+      "odabirVjezbe graf graf";
+    font-size: 20px;
+    text-align: center;
+  }
+}

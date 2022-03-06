@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bs">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="z3_stil.css" />
+    <title>Spirala 1, Zadatak 3</title>
+  </head>
+  <body>
+    <div id="okvir">
+      <h2>Postavi komentar</h2>
+      <p>Postavi komentar na rješenje zadatka.</p>
+
+      <div style="margin-bottom: 10px">
+        <form>
+          <table class="centrirana_tabela" style="margin-bottom: 0.83em">
+            <tr>
+              <td><label for="odabir_vjezbe">Odabir vježbe</label></td>
+              <td>
+                <select id="odabir_vjezbe">
+                  <option value="1">Vježba 1</option>
+                  <option value="2">Vježba 2</option>
+                  <option value="3">Vježba 3</option>
+                  <option value="4">Vježba 4</option>
+                  <option value="5">Vježba 5</option>
+                  <option value="6">Vježba 6</option>
+                  <option value="7">Vježba 7</option>
+                  <option value="8">Vježba 8</option>
+                  <option value="9">Vježba 9</option>
+                  <option value="10">Vježba 10</option>
+                  <option value="11">Vježba 11</option>
+                  <option value="12">Vježba 12</option>
+                  <option value="13">Vježba 13</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="odabir_zadatka"> Odabir zadatka </label></td>
+              <td>
+                <select id="odabir_zadatka">
+                  <option value="1">Zadatak 1</option>
+                  <option value="2">Zadatak 2</option>
+                  <option value="3">Zadatak 3</option>
+                  <option value="4">Zadatak 4</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="odabir_verzije">Odabir verzije</label></td>
+              <td>
+                <select id="odabir_verzije">
+                  <option value="1">Verzija 1</option>
+                  <option value="2">Verzija 2</option>
+                  <option value="3">Verzija 3</option>
+                  <option value="4">Verzija 4</option>
+                  <option value="5">Verzija 5</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="komentar">Komentar</label></td>
+              <td>
+                <textarea
+                  id="komentar"
+                  placeholder="Unesite Vaš komentar..."
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="centrirano">
+                <input type="submit" value="Pošalji" />
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><div class="linija"></div></td>
+            </tr>
+
+            <tr>
+              <td><label for="errors_log">Errors log</label></td>
+              <td><textarea id="errors_log"></textarea></td>
+            </tr>
+            <tr>
+              <td><label for="bez_gresaka">Bez grešaka</label></td>
+              <td><input type="checkbox" value="" id="bez_gresaka" /></td>
+            </tr>
+
+            <tr>
+              <td colspan="2" class="centrirano">
+                <input type="submit" value="Dodaj rezultate testa" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

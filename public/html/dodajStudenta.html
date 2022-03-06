@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dodavanje studenta</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div>
+      <form>
+        <label for="ime">Ime studenta: </label>
+        <br />
+        <input id="ime" type="text" name="ime" />
+        <br />
+        <br />
+        <label for="prezime">Prezime studenta: </label>
+        <br />
+        <input id="prezime" type="text" name="prezime" />
+        <br />
+        <br />
+        <label for="index">Index studenta: </label>
+        <br />
+        <input id="index" type="text" name="index" />
+        <br />
+        <br />
+        <label for="grupa">Grupa: </label>
+        <br />
+        <input id="grupa" type="text" name="grupa" />
+        <br />
+        <br />
+        <input type="button" id="potvrda" value="Potvrdi" />
+        <br />
+        <br />
+        <div id="ajaxstatus" style="color: blue"></div>
+      </form>
+    </div>
+    <script src="dodajStudenta.js"></script>
+    <script src="StudentAjax.js"></script>
+  </body>
+</html>
